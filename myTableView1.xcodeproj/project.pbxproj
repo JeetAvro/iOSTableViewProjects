@@ -15,6 +15,10 @@
 		18BC37CB23D55D7700F9E6C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BC37C923D55D7700F9E6C9 /* LaunchScreen.storyboard */; };
 		18BC37D623D55D7700F9E6C9 /* myTableView1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC37D523D55D7700F9E6C9 /* myTableView1Tests.swift */; };
 		18BC37E123D55D7700F9E6C9 /* myTableView1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC37E023D55D7700F9E6C9 /* myTableView1UITests.swift */; };
+		18BC37F323D5819400F9E6C9 /* AnimalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC37F223D5819400F9E6C9 /* AnimalListViewController.swift */; };
+		18BC37F523D581C000F9E6C9 /* FoodListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC37F423D581C000F9E6C9 /* FoodListViewController.swift */; };
+		18BC37F923D5ACF700F9E6C9 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC37F823D5ACF700F9E6C9 /* SelectionViewController.swift */; };
+		18BC37FB23D5B5C300F9E6C9 /* FlowerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC37FA23D5B5C300F9E6C9 /* FlowerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		18BC37DC23D55D7700F9E6C9 /* myTableView1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myTableView1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BC37E023D55D7700F9E6C9 /* myTableView1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myTableView1UITests.swift; sourceTree = "<group>"; };
 		18BC37E223D55D7700F9E6C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18BC37F223D5819400F9E6C9 /* AnimalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListViewController.swift; sourceTree = "<group>"; };
+		18BC37F423D581C000F9E6C9 /* FoodListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListViewController.swift; sourceTree = "<group>"; };
+		18BC37F823D5ACF700F9E6C9 /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
+		18BC37FA23D5B5C300F9E6C9 /* FlowerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +111,13 @@
 				18BC37C023D55D7300F9E6C9 /* SceneDelegate.swift */,
 				18BC37C223D55D7300F9E6C9 /* ViewController.swift */,
 				18BC37C423D55D7300F9E6C9 /* Main.storyboard */,
+				18BC37FA23D5B5C300F9E6C9 /* FlowerViewController.swift */,
 				18BC37C723D55D7700F9E6C9 /* Assets.xcassets */,
 				18BC37C923D55D7700F9E6C9 /* LaunchScreen.storyboard */,
 				18BC37CC23D55D7700F9E6C9 /* Info.plist */,
+				18BC37F223D5819400F9E6C9 /* AnimalListViewController.swift */,
+				18BC37F423D581C000F9E6C9 /* FoodListViewController.swift */,
+				18BC37F823D5ACF700F9E6C9 /* SelectionViewController.swift */,
 			);
 			path = myTableView1;
 			sourceTree = "<group>";
@@ -259,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BC37FB23D5B5C300F9E6C9 /* FlowerViewController.swift in Sources */,
 				18BC37C323D55D7300F9E6C9 /* ViewController.swift in Sources */,
+				18BC37F923D5ACF700F9E6C9 /* SelectionViewController.swift in Sources */,
+				18BC37F523D581C000F9E6C9 /* FoodListViewController.swift in Sources */,
 				18BC37BF23D55D7300F9E6C9 /* AppDelegate.swift in Sources */,
+				18BC37F323D5819400F9E6C9 /* AnimalListViewController.swift in Sources */,
 				18BC37C123D55D7300F9E6C9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

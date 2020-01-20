@@ -9,31 +9,62 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var Arr:[String]=["My","Exam","Has","Done"]
+   
+    @IBOutlet weak var LoginBtn: UIButton!
     
-    @IBOutlet weak var Tableview: UITableView!
+    @IBOutlet weak var emailTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        Tableview.delegate=self
-        Tableview.dataSource=self
+        LoginBtn.layer.cornerRadius = 7
+        
         // Do any additional setup after loading the view.
     }
     
+    
+    @IBAction func loginButton(_ sender: Any) {
+        
+        if(self.emailTextField.text == "kmarif1432@gmail.com" && self.passwordTextField.text == "1234"){
+                let vc = storyboard?.instantiateViewController(identifier: "SelectionViewController") as! SelectionViewController
+                      self.navigationController?.pushViewController(vc, animated: true)
+            }
+        else if(self.emailTextField.text==nil){
+            let alert = UIAlertController(title: "Error!", message: "Enter your Email.", preferredStyle: .alert)
+
+            alert.addAction(UIAlertAction(title: "Try Again", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
+        else if(self.passwordTextField.text==nil){
+           let alert = UIAlertController(title: "Error!", message: "Enter your password.", preferredStyle: .alert)
+
+            alert.addAction(UIAlertAction(title: "Try Again", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
+        else if(self.emailTextField.text == nil && self.passwordTextField.text==nil){
+            let alert = UIAlertController(title: "Error!", message: "Enter your email an password", preferredStyle: .alert)
+
+            alert.addAction(UIAlertAction(title: "Try Again", style: .default, handler: nil))
+            
+
+            self.present(alert, animated: true)
+        }
+        else{
+            
+            let alert = UIAlertController(title: "Error!", message: "Email or Password doesn't match", preferredStyle: .alert)
+
+            alert.addAction(UIAlertAction(title: "Try Again", style: .default, handler: nil))
+            
+
+            self.present(alert, animated: true)
+        }
+        
+      
+        
+    
+    
   
     
 }
 
-extension ViewController:UITableViewDataSource, UITableViewDelegate{
-func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return Arr.count
 }
-
-func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell=tableView.dequeueReusableCell(withIdentifier: "cell")
-  
-    cell?.textLabel?.text=Arr[indexPath.row]
-    return cell!
-    
-}
-}
-
